@@ -481,8 +481,7 @@
       function jumpToParent() {
         if (window.parentIFrame) {
           window.parentIFrame.moveToAnchor(hash)
-          const y = el.getBoundingClientRect().top + window.pageYOffset - 200
-          window.scrollTo({ top: y, behavior: 'smooth' })
+          console.log('nothing')
         } else {
           log(
             iframeId,
