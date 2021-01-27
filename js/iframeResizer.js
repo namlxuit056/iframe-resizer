@@ -1027,6 +1027,7 @@
           ),
 
           moveToAnchor: function (anchor) {
+            console.log('move to archor')
             trigger(
               'Move to anchor',
               'moveToAnchor:' + anchor,
