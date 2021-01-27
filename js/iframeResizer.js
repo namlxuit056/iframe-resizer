@@ -691,7 +691,7 @@
 
   function setPagePosition(iframeId) {
     if (null !== pagePosition) {
-      window.scrollTo(pagePosition.x, pagePosition.y - 100)
+      window.scrollTo(pagePosition.x, pagePosition.y)
       log(
         iframeId,
         'Set page position: ' + pagePosition.x + ',' + pagePosition.y
@@ -1027,6 +1027,7 @@
           ),
 
           moveToAnchor: function (anchor) {
+            console.log('move to archor')
             trigger(
               'Move to anchor',
               'moveToAnchor:' + anchor,
