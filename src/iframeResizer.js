@@ -692,7 +692,7 @@
   function setPagePosition(iframeId) {
     if (null !== pagePosition) {
       console.log('namlxuit')
-      window.scrollTo(pagePosition.x, pagePosition.y + 300)
+      window.scrollTo(pagePosition.x, pagePosition.y - 200)
       log(
         iframeId,
         'Set page position: ' + pagePosition.x + ',' + pagePosition.y
