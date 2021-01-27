@@ -692,7 +692,6 @@
 
   function setPagePosition(iframeId) {
     if (null !== pagePosition) {
-      console.log('namlxuit working here')
       window.scrollTo(pagePosition.x, pagePosition.y - 100)
       log(
         iframeId,
