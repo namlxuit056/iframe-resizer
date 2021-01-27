@@ -798,6 +798,7 @@
           ') targetOrigin: ' +
           target
       )
+
       iframe.contentWindow.postMessage(msgId + msg, target)
     }
 
