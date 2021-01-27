@@ -408,6 +408,7 @@
       }
 
       function calcOffset() {
+        console.log('cal offset')
         return {
           x: Number(messageData.width) + offset.x,
           y: Number(messageData.height) + offset.y
@@ -419,7 +420,7 @@
         if (window.parentIFrame) {
           window.parentIFrame['scrollTo' + (addOffset ? 'Offset' : '')](
             newPosition.x,
-            newPosition.y
+            newPosition.y + 200
           )
         } else {
           warn(
