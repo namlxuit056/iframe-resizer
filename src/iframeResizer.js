@@ -414,6 +414,7 @@
       }
 
       function scrollParent() {
+        console.log('scroll parent')
         if (window.parentIFrame) {
           window.parentIFrame['scrollTo' + (addOffset ? 'Offset' : '')](
             newPosition.x,
@@ -449,6 +450,7 @@
     }
 
     function scrollTo() {
+      console.log('scroll to')
       if (false !== on('onScroll', pagePosition)) {
         setPagePosition(iframeId)
       } else {
@@ -691,7 +693,6 @@
 
   function setPagePosition(iframeId) {
     if (null !== pagePosition) {
-      console.log('namlxuit')
       window.scrollTo(pagePosition.x, pagePosition.y - 200)
       log(
         iframeId,
