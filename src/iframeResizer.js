@@ -390,6 +390,7 @@
     function getElementPosition(target) {
       var iFramePosition = target.getBoundingClientRect()
 
+      console.log('iframe', iFramePosition)
       getPagePosition(iframeId)
 
       return {
