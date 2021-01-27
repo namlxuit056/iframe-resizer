@@ -420,7 +420,7 @@
         if (window.parentIFrame) {
           window.parentIFrame['scrollTo' + (addOffset ? 'Offset' : '')](
             newPosition.x,
-            newPosition.y + 200
+            newPosition.y - 200
           )
         } else {
           warn(
