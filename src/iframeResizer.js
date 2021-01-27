@@ -481,7 +481,6 @@
       function jumpToParent() {
         if (window.parentIFrame) {
           window.parentIFrame.moveToAnchor(hash)
-          console.log('nothing')
         } else {
           log(
             iframeId,
@@ -1028,7 +1027,6 @@
           ),
 
           moveToAnchor: function (anchor) {
-            console.log('move to archor')
             trigger(
               'Move to anchor',
               'moveToAnchor:' + anchor,

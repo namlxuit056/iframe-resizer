@@ -544,13 +544,14 @@
 
       return {
         x: parseInt(elPosition.left, 10) + parseInt(pagePosition.x, 10),
-        y: parseInt(elPosition.top, 10) + parseInt(pagePosition.y, 10)
+        y: parseInt(elPosition.top, 10) + parseInt(pagePosition.y, 10) + 100
       }
     }
 
     function findTarget(location) {
       function jumpToTarget(target) {
         var jumpPosition = getElementPosition(target)
+        console.log(target)
 
         log(
           'Moving to in page link (#' +
