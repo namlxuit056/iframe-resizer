@@ -390,12 +390,12 @@
     function getElementPosition(target) {
       var iFramePosition = target.getBoundingClientRect()
 
-      console.log('iframe', iFramePosition)
+      console.log('iframe', iFramePosition.bottom)
       getPagePosition(iframeId)
 
       return {
         x: Math.floor(Number(iFramePosition.left) + Number(pagePosition.x)),
-        y: Math.floor(Number(iFramePosition.top) + Number(pagePosition.y))
+        y: Math.floor(Number(iFramePosition.bottom) + Number(pagePosition.y))
       }
     }
 
@@ -408,7 +408,6 @@
       }
 
       function calcOffset() {
-        console.log('cal offset')
         return {
           x: Number(messageData.width) + offset.x,
           y: Number(messageData.height) + offset.y
@@ -416,7 +415,6 @@
       }
 
       function scrollParent() {
-        console.log('scroll parent')
         if (window.parentIFrame) {
           window.parentIFrame['scrollTo' + (addOffset ? 'Offset' : '')](
             newPosition.x,
