@@ -407,10 +407,11 @@
         log(iframeId, '--')
       }
 
+      console.log('scroll', messageData)
       function calcOffset() {
         return {
           x: Number(messageData.width) + offset.x,
-          y: Number(messageData.height) + offset.y
+          y: 0
         }
       }
 
