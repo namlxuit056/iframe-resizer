@@ -400,8 +400,8 @@
     }
 
     function scrollRequestFromChild(addOffset) {
-      /* istanbul ignore next */ // Not testable in Karma
-      function reposition() {
+      console.log('add offset', addOffset) // Not testable in Karma
+      /* istanbul ignore next */ function reposition() {
         pagePosition = newPosition
         scrollTo()
         log(iframeId, '--')
@@ -533,7 +533,6 @@
           break
 
         case 'scrollToOffset':
-          console.log('scrollToOffset')
           scrollRequestFromChild(true)
           break
 
