@@ -388,7 +388,7 @@
     }
 
     function getElementPosition(target) {
-      var iFramePosition = target.offsetTop()
+      var iFramePosition = target.getBoundingClientRect()
 
       console.log('iframe', iFramePosition)
       getPagePosition(iframeId)
