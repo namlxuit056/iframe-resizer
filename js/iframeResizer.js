@@ -408,7 +408,6 @@
       }
 
       function calcOffset() {
-        console.log(messageData)
         return {
           x: Number(messageData.width) + offset.x,
           y: Number(messageData.height) + offset.y
@@ -534,6 +533,7 @@
           break
 
         case 'scrollToOffset':
+          console.log('scrollToOffset')
           scrollRequestFromChild(true)
           break
 
